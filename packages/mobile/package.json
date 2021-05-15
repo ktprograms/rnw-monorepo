@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "android": "concurrently \"yarn start\" \"react-native run-android --no-packager\"",
-    "ios": "concurrently \"yarn start\" \"react-native run-ios --no-packager\"",
+    "android": "yarn start & react-native run-android --no-packager",
+    "ios": "yarn start & react-native run-ios --no-packager --simulator=\"iPhone 12 mini\"",
     "lint": "eslint .",
     "start": "react-native start",
     "studio": "studio android",
@@ -12,9 +12,16 @@
     "xcode": "xed ios"
   },
   "dependencies": {
+    "@react-native-community/masked-view": "^0.1.11",
+    "@react-navigation/native": "^5.9.4",
+    "@react-navigation/stack": "^5.14.5",
     "components": "0.0.1",
     "react": "17.0.1",
-    "react-native": "0.63.3"
+    "react-native": "0.63.3",
+    "react-native-gesture-handler": "^1.10.3",
+    "react-native-reanimated": "^2.1.0",
+    "react-native-safe-area-context": "^3.2.0",
+    "react-native-screens": "^3.2.0"
   },
   "devDependencies": {
     "@testing-library/jest-native": "3.4.3",

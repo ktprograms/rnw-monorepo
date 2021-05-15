@@ -8,6 +8,7 @@
     ]
   },
   "scripts": {
+    "start": "yarn workspace web-cra start & yarn android & yarn ios",
     "android": "yarn workspace mobile android",
     "format": "prettier --write .",
     "ios": "yarn workspace mobile ios",
