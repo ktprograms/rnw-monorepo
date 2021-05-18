@@ -8,7 +8,8 @@
     ]
   },
   "scripts": {
-    "start": "yarn workspace web-cra start & yarn android & yarn ios",
+    "start": "yarn web & yarn android & yarn ios",
+    "web": "yarn workspace web-cra start",
     "android": "yarn workspace mobile android",
     "format": "prettier --write .",
     "ios": "yarn workspace mobile ios",
@@ -46,5 +47,6 @@
     "*.{js,jsx,ts,tsx,json,html,md,css}": [
       "prettier --write"
     ]
-  }
+  },
+  "dependencies": {}
 }
